@@ -13,8 +13,8 @@ int main()
 	std::cout << "Please input a positive integer(<=100) : ";
 	std::cin >> userInput ;
 
-	dollar = userInput / 100;
-	tmp = userInput % 100;
+	dollar = (100-userInput) / 100;
+	tmp = (100-userInput) % 100;
 
 	quarter = tmp / 25;
 	tmp %= 25;
